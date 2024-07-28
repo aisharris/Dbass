@@ -1,0 +1,46 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.artist-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 150%;
+  text-align: center;
+  margin: 4%;
+}
+
+.artist-image {
+  position: relative;
+  left: 9.25%;
+  border-radius: 50%;
+  max-width: 80%;
+  height: auto;
+  transition: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+.artist-image:hover {
+  transform: scale3d(1.05, 1.05, 1);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+.artist-title:hover ~ .artist-image {
+  border-radius: 25%;
+}
+
+.artist-image:hover ~ .artist-title {
+  color: #c95bf5;
+}
+
+.artist-title:hover {
+  color: #c95bf5;
+}

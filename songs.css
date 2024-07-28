@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+}
+
+.image-div {
+  width: 30%;
+  grid-column: 1;
+  position: fixed;
+}
+
+.image-div img {
+  width: 100%;
+  margin-left: 35%;
+  margin-top: 30%;
+  position: absolute;
+}
+
+.texts {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  border-spacing: 40px;
+}
+
+.table-pos {
+  text-align: right;
+}
